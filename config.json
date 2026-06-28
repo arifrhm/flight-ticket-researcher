@@ -1,0 +1,49 @@
+{
+  "engine_type": "selenium",
+  "storage_type": "json",
+  "storage_options": {
+    "json": {
+      "serializer": "json",
+      "filepath": "results/prices.json"
+    },
+    "duckdb": {
+      "db_path": "results/flights.db",
+      "export_parquet_path": "results/prices.parquet",
+      "export_csv_path": "results/prices.csv"
+    },
+    "pandas": {
+      "format": "parquet",
+      "filepath": "results/prices.parquet"
+    }
+  },
+  "fastmcp": {
+    "url": "http://localhost:8000/mcp/",
+    "token": "replace-with-a-long-random-token"
+  },
+  "selenium": {
+    "headless": true
+  },
+  "metrics_file": "results/metrics.json",
+  "dcity": "PLM",
+  "acity": "VIE",
+  "currency": "USD",
+  "locale": "en-XX",
+  "trip_type": "ow",
+  "cabin_class": "y",
+  "quantity": 1,
+  "max_retries": 3,
+  "timeout_seconds": 15,
+  "months": [
+    {"year_month": "2026-08", "days": [1, 15, 28]},
+    {"year_month": "2026-09", "days": [1, 15, 28]},
+    {"year_month": "2026-10", "days": [1, 15, 28]},
+    {"year_month": "2026-11", "days": [1, 15, 28]},
+    {"year_month": "2026-12", "days": [1, 15, 28]},
+    {"year_month": "2027-01", "days": [1, 15, 28]},
+    {"year_month": "2027-02", "days": [1, 15, 28]},
+    {"year_month": "2027-03", "days": [1, 15, 28]},
+    {"year_month": "2027-04", "days": [1, 15, 28]},
+    {"year_month": "2027-05", "days": [1, 15, 28]},
+    {"year_month": "2027-06", "days": [1, 15, 28]}
+  ]
+}
