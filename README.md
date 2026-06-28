@@ -99,12 +99,12 @@ The project uses `pytest` and `pytest-asyncio` for unit and E2E validation. Code
 
 To run the complete test suite:
 ```bash
-PYTHONPATH=. uv run pytest
+uv run pytest
 ```
 
 To run tests and output a detailed statement coverage report:
 ```bash
-PYTHONPATH=. uv run pytest --cov=src --cov-report=term-missing
+uv run pytest --cov=src --cov-report=term-missing
 ```
 
 *Note: All core domain modules, scraping logic, logging, and observability files have **100% unit test coverage**.*
